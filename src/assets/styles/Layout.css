@@ -1,0 +1,112 @@
+:root {
+  --header-back-color: #111111;
+  --font-color: #ffffff;
+  --font-bgColor: #6aade3;
+  --font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  height: 50px;
+  position: relative;
+  align-items: center;
+  background-color: var(--header-back-color);
+  display: flex;
+  justify-content: space-around;
+}
+.header div img {
+	margin-right: 8px;
+  height: 35px;
+  width: 35px;
+}
+.header div {
+	/* left: 170px; */
+	left: 12%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+}
+.header div p {
+	border-left: 1px #4d4c4c solid;
+	color: var(--font-color);
+	font-size: 14px;
+	padding: 10px;
+  line-height: 18x;
+  text-align: left;
+  letter-spacing: normal;
+}
+.header .ul-li {
+	position: absolute;
+	right: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+}
+.header .ul-li li {
+  font-size: 13.6px;
+  text-align: center;
+  line-height: 17.68px;
+  width: 97px;
+  /* background-color: var(--font-bgColor); */
+}
+.header .ul-li li .link {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  transition: 0.3s;
+}
+.header .ul-li li .link:hover{
+  background-color: rgba(106, 173, 227, 0.3);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header button {
+  width: 44px;
+  height: 32px;
+  color: var(--font-color);
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 15.6px;
+  text-align: center;
+  letter-spacing: normal;
+  border: 1px solid #3f3f3f;
+}
+.ul-hovers{
+  color: var(--font-color);
+  display: none;
+  top: 50px;
+  position: absolute;
+  z-index: 848484984;
+  background-color: #111111;
+  
+}
+.ul-hovers li {
+
+  height: 50px;
+  display: flex;
+  width: 172px;
+  justify-content: center;
+  align-items: center;
+}
+.ul-hovers li:hover{
+  height: 50px;
+  background-color: rgba(106, 173, 227, 0.3);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 156px;
+}
+.header .ul-li li:hover .ul-hovers{
+  width: 250px;
+  font-size: 13.6px;
+  line-height: 17.68px;
+  height: 100px;
+  text-align: left;
+  letter-spacing: normal;
+  padding: 8px;
+  box-sizing: border-box;
+  display: block;
+}
