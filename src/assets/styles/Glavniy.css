@@ -93,7 +93,7 @@
   opacity: 0.5;
   transition: 0.3s;
   box-sizing: border-box;
-  width: 14%;
+  width: 200px;
   height: 140px;
 }
 .containeer-two .row-image > div img:hover {
@@ -143,10 +143,10 @@ opacity: 0.3;
   position: absolute;
   top: 180px;
   width: 100%;
-  margin: 0 40px;
+  /* margin: 0 40px; */
 }
 .containeer-three .rows > div div img:nth-child(2){
-  width: 250px;
+  width: 100%;
   top: 250px;
   left: 10px;
 }
@@ -170,4 +170,52 @@ opacity: 0.3;
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 20.8px;
+}@media (max-width : 576px){
+  .containeer-one div h1{
+    font-size: 30px;
+  line-height: 30px;
+  }
+  .containeer-one div p{
+    font-size: 20px;
+    list-style: 20px;
+  }
+  .containeer-one div button{
+    font-size: 8px;
+    width: 100%;
+  }
+  .containeer-two .row-image h1{
+    font-size: 30px;
+    list-style: 30px;
+  }
+  .containeer-three .containeer-three-h1{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media  screen and (max-width : 960px){
+  .containeer-two .row-image > div{
+    display: block;
+  }
+  .containeer-three .rows{
+    display: block;
+  }
+  .containeer-three .rows  div{
+    position: static;
+    margin: 40px auto;
+  }
+  .containeer-three .rows > div div img{
+    position: static;
+  }
+  .containeer-three .rows > div div .texts{
+    margin: 0;
+    position: static;
+  }
+  .containeer-three .rows > div div img:nth-child(2){
+    margin-top: -180px;
+  }
+  .containeer-one div button{
+    width: 80%;
+    font-size: 150%;
+  }
+  
 }

@@ -60,6 +60,7 @@ function Layout() {
         <Outlet />
       </main>
       {/* footer  */}
+      
     </>
   );
 }
