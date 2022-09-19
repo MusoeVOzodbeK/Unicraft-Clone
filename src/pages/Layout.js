@@ -5,6 +5,7 @@ import icon from "../photos/image-removebg-preview (3).png";
 function Layout() {
   const setMenuBar = () => {
     document.querySelector(".ul-li").classList.toggle("toggle");
+    console.log(document.querySelector(".ul-li"))
   };
   return (
     <>
@@ -13,7 +14,7 @@ function Layout() {
           <img src={icon} alt="" />
           <p>Unicraft — платформа для онлайн обучения</p>
         </div>
-        <ul className="ul-li">
+        <ul className="ul-li" >
           <li>
             <Link className="link" to="/">
               Главная
