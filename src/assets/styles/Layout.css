@@ -42,7 +42,7 @@
   justify-content: flex-end;
   height: 50px;
 }
-.header .ul-li li {
+.header .ul-li>li {
   font-size: 13.6px;
   text-align: center;
   line-height: 17.68px;
@@ -95,40 +95,94 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  transform: translateX(22px);
   z-index: 8448465444;
 }
 .ul-hovers {
   color: var(--font-color);
   display: none;
-  top: 50px;
-  position: absolute;
+  position: absolute; 
   z-index: 848484984;
   background-color: #111111;
 }
+.second-hover {
+  color: var(--font-color);
+  display: none;
+  position: absolute; 
+  z-index: 848484984;
+  background-color: #111111;
+}
+.threend-hover {
+  color: var(--font-color);
+  display: none;
+  position: absolute; 
+  z-index: 848484984;
+  background-color: #111111;
+}
+.fourth-hover {
+  color: var(--font-color);
+  display: none;
+  position: absolute; 
+  z-index: 848484984;
+  background-color: #111111;
+}
+
 .ul-hovers li {
   height: 50px;
   display: flex;
-  width: 172px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 156px;
+  margin-top: 10px;
+  padding: 8px;
 }
-.ul-hovers li:hover {
-  height: 50px;
-  background-color: rgba(106, 173, 227, 0.3);
+.second-hover li {
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+  margin-top: 10px;
+  padding: 8px;
+}
+.threend-hover li {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+  margin-top: 10px;
+  padding: 8px;
+}
+.fourth-hover li {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+  margin-top: 10px;
+  padding: 8px;
+}
+.ul-hovers > li:hover {
+  background-color: rgba(106, 173, 227, 0.3);
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+}
+.fourth-hover > li:hover {
+  background-color: rgba(106, 173, 227, 0.3);
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
   align-items: center;
   width: 156px;
 }
 .header .ul-li li:hover .ul-hovers {
-  width: 250px;
-  font-size: 13.6px;
-  line-height: 17.68px;
-  height: 100px;
-  text-align: left;
-  letter-spacing: normal;
+  width: 170px;
   padding: 8px;
+  /* height: 120px; */
   box-sizing: border-box;
   display: block;
 }
@@ -140,6 +194,72 @@
   font-size: 30px;
   top: 10px;
 }
+.second-hover{
+  display: none;
+}
+.header .ul-li li:hover .second-hover{
+  display: block;
+  width: 170px;
+  padding: 8px;
+  /* height: 120px; */
+  box-sizing: border-box;
+  position: absolute
+} 
+.header .ul-li li:hover .threend-hover{
+  display: block;
+  width: 170px;
+  padding: 8px;
+  /* height: 120px; */
+  box-sizing: border-box;
+  position: absolute
+} 
+.header .ul-li li:hover .fourth-hover{
+  display: block;
+  width: 170px;
+  padding: 8px;
+  /* height: 120px; */
+  box-sizing: border-box;
+  position: absolute
+} 
+.second-hover > li:hover {
+  background-color: rgba(106, 173, 227, 0.3);
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+}
+
+.fourth-hover > li:hover {
+  background-color: rgba(106, 173, 227, 0.3);
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+}
+.threend-hover > li:hover {
+  background-color: rgba(106, 173, 227, 0.3);
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+}
+.fourth-hover > li:hover {
+  background-color: rgba(106, 173, 227, 0.3);
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 156px;
+}
+.threend-hover{
+  display: none;
+}
+.fourth-hover{
+  display: none;
+}
 @media screen and (max-width: 850px) {
   .header .ul-li {
     display: none;
@@ -148,6 +268,8 @@
     display: block;
   }
   .toggle {
+    position: absolute;
+    z-index: 54646515646165164;
     display: flex;
     background-color: #111111;
     width: 100%;

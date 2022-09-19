@@ -23,33 +23,33 @@ function Layout() {
             <Link className="link" to="/platforma">
               Платформа
             </Link>
-            {/* <ul className="ul-hovers">
-                <li><Link className="link" to="/platforma">Функционал</Link></li>
-                <li>Каталог курсов<i class='bx bx-link-external'></i></li>
-              </ul> */}
+            <ul className="ul-hovers">
+                <li ><Link className="link" to="/platforma">Функционал</Link></li>
+                <li >Каталог курсов<i class='bx bx-link-external'></i></li>
+              </ul>
           </li>
           <li>
             <Link className="link" to="/tarif">
               Тарифы
             </Link>
-            {/* <ul>
+            <ul className="second-hover">
                 <li>Стоимость</li>
                 <li>Возможность</li>
                 <li>Частые вапросы</li>
-              </ul> */}
+              </ul>
           </li>
           <li>
             <Link className="link" to="/kompaniya">
               Компания
             </Link>
 
-            {/* <ul>
+            <ul className="threend-hover">
                 <li>О нас</li>
                 <li>Отзывы</li>
                 <li>Партнерам</li>
                 <li>Вакансии</li>
                 <li>Контакты</li>
-              </ul> */}
+              </ul>
           </li>
           <li>
             <Link className="link" to="/podderjka">
@@ -60,9 +60,9 @@ function Layout() {
             <Link className="link" to="/blog">
               Блог
             </Link>
-            {/* <ul>
+            <ul className="fourth-hover">
                 <li>Стать автором</li>
-              </ul> */}
+              </ul>
           </li>
           <li>
             <button className="lang">Ru</button>

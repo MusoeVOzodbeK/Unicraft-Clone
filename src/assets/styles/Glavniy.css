@@ -76,6 +76,7 @@
 .containeer-two .row-image > div {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .containeer-two .row-image h1 {
   font-size: 40px;
@@ -88,7 +89,7 @@
   letter-spacing: -0.6px;
   color: #262626;
 }
-.containeer-two .row-image > div img {
+.containeer-two .row-image  div img {
   padding: 32px;
   opacity: 0.5;
   transition: 0.3s;
@@ -170,7 +171,16 @@ opacity: 0.3;
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 20.8px;
-}@media (max-width : 576px){
+}
+@media (min-width : 281px) and (max-width : 500px){
+  .containeer-two .row-image > div{
+    display: block;
+  }
+  .containeer-two .row-image  div img{
+    margin:0 20%;
+  }
+}
+@media (max-width : 576px){
   .containeer-one div h1{
     font-size: 30px;
   line-height: 30px;
@@ -206,6 +216,7 @@ opacity: 0.3;
   }
   .containeer-three .rows > div div img{
     position: static;
+    margin: 0;
   }
   .containeer-three .rows > div div .texts{
     margin: 0;
