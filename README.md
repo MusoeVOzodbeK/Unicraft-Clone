@@ -1,4 +1,4 @@
-## Actually you can view seti with
+## Actually you can view site with
 https://unicraft-clone.netlify.app/
 
 
