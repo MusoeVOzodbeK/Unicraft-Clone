@@ -196,13 +196,9 @@
       }
 
       @include mobile {
-        left: -20px;
+        left: -130px;
         max-width: 570px;
         max-height: 420px;
-      }
-
-      @include breakpoint-down(550px) {
-        left: -130px;
       }
     }
 
