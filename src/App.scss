@@ -18,4 +18,67 @@ body {
   color: $txt-color;
   background: $body-bg;
   overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.btn {
+  display: block;
+  font-weight: 600;
+  font-size: 28px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: $border-radius;
+  color: #fff;
+  transition: box-shadow 0.3s ease,
+  transform 0.5s ease;
+
+  &:hover {
+    box-shadow: 0 2px 10px rgb(26 89 140 / 25%);
+  }
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+.btn-blue {
+  background: radial-gradient(circle at 20%, #8bc6f5, #6AADE3);
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+.btn-green {
+  background: radial-gradient(circle at 20%, #96da4e, #7cb83d);
+}
+
+.inp {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  outline: none;
+  transition: border 0.3s ease,
+  box-shadow 0.3s ease;
+
+  &:focus {
+    border-color: #6AADE3;
+    box-shadow: 0 2px 10px rgb(106 173 227 / 35%);
+  }
+
+  &::placeholder {
+    font-size: 20px;
+    color: #b5b5b5;
+  }
+
+  @include mobile {
+    height: 45px;
+    font-size: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
 }

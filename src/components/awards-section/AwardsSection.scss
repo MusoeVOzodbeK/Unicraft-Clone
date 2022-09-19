@@ -1,0 +1,221 @@
+@use './src/scss' as *;
+
+.awards {
+  position: relative;
+  padding: 50px 0;
+  
+  .bg-cup {
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    width: 300px;
+    height: 470px;
+    background-position: center;
+    background-size: contain;
+    background-image: url('https://www.unicraft.org/style/img/awards_cup.webp');
+    transform: rotate(-15deg);
+    z-index: -1;
+
+    @include tablet {
+      top: 250px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  &__desc {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    height: fit-content;
+    flex: 1 1 220px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    border: 2px solid;
+    background: $body-bg;
+    transition: transform 0.5s ease;
+
+    &:nth-child(even) {
+      transform: rotate(3deg);
+      box-shadow: 2px 30px 59px 0 rgb(40 28 107 / 16%);
+
+    }
+
+    &:nth-child(odd) {
+      transform: rotate(-3deg);
+      box-shadow: 2px 30px 59px 0 rgb(99 197 231 / 16%)
+    }
+
+    &:hover {
+      transform: rotate(0) scale(1.05);
+    }
+
+    &__img {
+      min-width: 100px;
+      min-height: 35px;
+      margin-bottom: 2rem;
+
+      @include mobile {
+        max-width: 120px;
+        object-fit: contain;
+      }
+    }
+
+    &__titles {
+      max-width: 210px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 2rem;
+
+      @include mobile {
+        font-size: 24px;
+      }
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    &__desc {
+      font-size: 13.5px;
+    }
+
+    @include tablet {
+      flex-basis: 35%;
+    }
+
+    @include breakpoint-down(442px) {
+      flex-basis: 65%;
+      padding: 2rem;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    position: relative;
+    padding: 140px 130px;
+    color: #fff;
+    background: radial-gradient(circle at 70%, #95c5eb, #6AADE3);
+
+    &__titles {
+      max-width: 500px;
+      padding: 0 30px;
+
+      @include breakpoint-down(930px) {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 40px;
+      margin-bottom: 20px;
+
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+
+    &__desc {
+      font-size: 20px;
+      margin-bottom: 20px;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    &__list {
+      gap: 10px;
+
+      @include breakpoint-down(930px) {
+        justify-content: center;
+      }
+
+      li:nth-child(2) {
+        position: relative;
+        right: 7px;
+      }
+
+      a {
+        width: 135px;
+        height: 40px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+
+    &__img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      @include breakpoint-down(1300px) {
+        right: -10%;
+      }
+
+      @include tablet {
+        right: -25%;
+      }
+
+      @include breakpoint-down(930px) {
+        position: relative;
+        top: 80px;
+        left: 100px;
+        max-width: 700px;
+        max-height: 500px;
+      }
+
+      @include breakpoint-down(750px) {
+        left: -40px;
+      }
+
+      @include mobile {
+        left: -20px;
+        max-width: 570px;
+        max-height: 420px;
+      }
+
+      @include breakpoint-down(550px) {
+        left: -130px;
+      }
+    }
+
+    @include breakpoint-down(1170px) {
+      padding: 140px 50px;
+    }
+
+    @include breakpoint-down(930px) {
+      padding: 80px 50px;
+    }
+
+    @include mobile {
+
+    }
+  }
+}
