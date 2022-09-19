@@ -36,10 +36,15 @@
     width: 100%;
     text-align: center;
     padding: 40px 50px;
+    margin: auto;
     border-radius: 6px;
     background: #fff;
     box-shadow: 0 10px 30px -10px HSLA(0, 0%, 0%, 0.3),0 0 10px -2px HSLA(0, 0%, 0%, 0.5);
     z-index: 20;
+
+    @include mobile {
+      padding: 30px 20px;
+    }
 
     .fa-times {
       position: absolute;
