@@ -69,4 +69,5 @@ const MyModal = ({ modalActive, setModalActive }) => {
     );
 };
 
+
 export default MyModal;
