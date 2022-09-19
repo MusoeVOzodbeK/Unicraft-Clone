@@ -2,7 +2,6 @@ import React from 'react';
 
 import './LetsTry.scss'
 import MyInput from "../UI/input/MyInput";
-import MyModal from "../UI/modal/MyModal";
 
 const LetsTry = () => {
     return (
