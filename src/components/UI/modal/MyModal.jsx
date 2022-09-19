@@ -11,7 +11,7 @@ const MyModal = ({ modalActive, setModalActive }) => {
     return (
         <div className='modal'>
             <div className="modal__content content">
-                <div>
+                <div onClick={() => setModalActive(false)}>
                     <i className="far fa-times"></i>
                 </div>
                 <h3 className="content__title">Для получения доступа укажите</h3>
