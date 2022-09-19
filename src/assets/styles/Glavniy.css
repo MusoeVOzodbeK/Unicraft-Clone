@@ -52,11 +52,15 @@
   border-radius: 100px;
   font-size: 24px;
   line-height: 72px;
+  transition: 0.8s;
+  margin:auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: var(--font-family);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+}
+.containeer-one div button:hover{
+  transform: scale(1.1);
 }
 .containeer-two {
   background-color: var(--font-color);
@@ -177,7 +181,8 @@ opacity: 0.3;
     display: block;
   }
   .containeer-two .row-image  div img{
-    margin:0 20%;
+    margin:0 15%;
+    width: 70%;
   }
 }
 @media (max-width : 576px){
