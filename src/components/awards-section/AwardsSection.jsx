@@ -87,7 +87,7 @@ const AwardsSection = () => {
                             </li>
                         </ul>
                     </div>
-                    <img className='wrapper__img' src="https://www.unicraft.org/style/img/mobileapp_hand-ru.webp" alt="bg-phone"/>
+                    {/*<img className='wrapper__img' src="https://www.unicraft.org/style/img/mobileapp_hand-ru.webp" alt="bg-phone"/>*/}
                 </div>
             </div>
         </div>
