@@ -1,3 +1,7 @@
+## Actually you can view seti with
+https://unicraft-clone.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
