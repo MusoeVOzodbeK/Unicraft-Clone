@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './AwardsSection.scss'
 import MyModal from "../UI/modal/MyModal";
@@ -36,9 +36,11 @@ const AwardsSection = () => {
         },
     ]
 
+    const [modalActive, setModalActive] = useState(false)
+
     return (
         <div className='awards'>
-            <MyModal />
+            {modalActive && <MyModal modalActive={modalActive} setModalActive={setModalActive} />}
             <div className="bg bg-cup" />
             <div className="container">
                 <div className="awards__inner">
@@ -65,7 +67,7 @@ const AwardsSection = () => {
                     </ul>
                     <p className='awards__desc'>Платформа для организации и проведения дистанционного обучения,
                         многократно доказавшая свою эффективность на практике</p>
-                    <button className='awards__btn btn btn-blue'>Подключиться</button>
+                    <button className='awards__btn btn btn-blue' onClick={() => setModalActive(true)}>Подключиться</button>
                 </div>
             </div>
             <div className="awards__wrapper wrapper">
