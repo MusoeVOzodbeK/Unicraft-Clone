@@ -4,7 +4,7 @@ import "../assets/styles/Layout.css";
 import icon from "../photos/image-removebg-preview (3).png";
 function Layout() {
   const setMenuBar = () => {
-    document.querySelector(".ul-li").classList.toggle("toggle");
+    document.querySelector(".navbar").classList.toggle("toggle");
     console.log(document.querySelector(".ul-li"))
   };
   return (
@@ -14,6 +14,8 @@ function Layout() {
           <img src={icon} alt="" />
           <p>Unicraft — платформа для онлайн обучения</p>
         </div>
+        <nav className="navbar">
+
         <ul className="ul-li" >
           <li>
             <Link className="link" to="/">
@@ -72,6 +74,7 @@ function Layout() {
             </ul>
           </li>
         </ul>
+        </nav>
         <button onClick={setMenuBar}>
           <i className="bx bx-menu"></i>
         </button>

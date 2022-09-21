@@ -36,6 +36,7 @@
 }
 .header .ul-li {
   position: absolute;
+  top:0;
   right: 8%;
   display: flex;
   align-items: center;
@@ -260,17 +261,45 @@
 .fourth-hover{
   display: none;
 }
-.toggle{
-  position: absolute;
-  z-index: 54646515646165164;
-  display: block;
-  top: 90px;
-  background-color: #111111;
-  width: 100%;
-  height: 100%;
-}
 @media screen and (max-width: 850px) {
-  .header .ul-li{
+  .navbar.toggle> ul{
+    display: block;
+    position: absolute;
+    padding: 40px;
+    box-sizing: border-box;
+    left: 0;
+  }
+  .navbar.toggle .ul-li>li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar.toggle .ul-li li>ul{
+    background: none;
+    margin: 0;
+    margin: 40px 0 0 0 ;
+    border: 1px #111111 solid;
+    border-radius: 5px;
+    position:relative ;
+    left: 0;
+    display: block;
+  }
+  .navbar.toggle{
+    overflow-y: scroll;
+    background-color: rgb(17, 17, 17, 0.8);
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    padding: 0 0 0 40px;
+    height: 100vh;
+  }
+  .toggle{
+    z-index: 54646515646165164;
+    display: block;
+  }
+  header nav{
     display: none;
   }
   .header .bx.bx-menu {

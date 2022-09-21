@@ -4,7 +4,18 @@
   --font-bgColor: #6aade3;
   --font-family: "Montserrat", sans-serif;
 }
-
+.click-button{
+  position: fixed;
+  backdrop-filter: blur(40px);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px -10px, rgba(0, 0, 0, 0.5) 0px 0px 10px -2px;
+  z-index: 54848451844845448;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+background-color: #ffffff;
+  height: 100%;
+}
 .containeer-one {
   height: 800px;
   background-position: center;

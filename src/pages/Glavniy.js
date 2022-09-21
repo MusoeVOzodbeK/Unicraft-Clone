@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/Glavniy.css";
-import Tilt  from "react-parallax-tilt";
+import Tilt from "react-parallax-tilt";
 import asset0 from "../photos/photo_2022-09-21_23-09-12.jpg";
 import asset1 from "../photos/photo_2022-09-21_23-09-15.jpg";
 import asset12 from "../photos/asset 12.png";
@@ -13,9 +13,29 @@ import asset17 from "../photos/asset 17.png";
 function Glavniy() {
   return (
     <>
+      {/* <div className="click-button">
+        <p>Для получения доступа укажите</p>
+        <p>Кто будет обучаться на платформе?</p>
+        <table border="border">
+          <tr>
+            <td>Сотрудники</td>
+            <td>Клиенты</td>
+          </tr>
+          <tr>
+            <td>Студенты и школьники</td>
+            <td>Другие</td>
+          </tr>
+        </table>
+        <p>Контактные данные</p>
+        <input type="text" placeholder="Имя и Фамилия"/><br />
+        <input type="text" placeholder="Название организации"/>
+      </div> */}
       <div className="containeer-one">
         <video autoPlay loop muted playsInline className="back-video">
-          <source src="https://player.vimeo.com/external/660278794.hd.mp4?s=e4deeeb47bb419b5443c34fa7f0c89b7a31642c9&profile_id=174" type="video/mp4"></source>
+          <source
+            src="https://player.vimeo.com/external/660278794.hd.mp4?s=e4deeeb47bb419b5443c34fa7f0c89b7a31642c9&profile_id=174"
+            type="video/mp4"
+          ></source>
         </video>
         <div>
           <h1>Платформа для онлайн обучения</h1>
@@ -38,7 +58,7 @@ function Glavniy() {
           <div className="one-rows">
             <h1>1</h1>
             <div>
-              <Tilt tiltAxis={"y"} >
+              <Tilt tiltAxis={"y"}>
                 <img src={asset12} alt="" />
                 <img src={asset13} alt="" />
               </Tilt>
