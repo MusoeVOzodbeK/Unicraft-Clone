@@ -10,6 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
+  width: 100%;
   padding: 0;
   background-size: cover;
   /* background-image: url("https://www.unicraft.org/static/video/vh1/poster.webp"); */
@@ -21,9 +22,11 @@
   box-sizing: border-box;
   background: rgba(112, 168, 206, 0.6);
 }
-.back-video{
+.back-video {
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
+  object-fit: cover;
+  object-position: inherit;
 }
 .containeer-one div h1 {
   display: flex;
@@ -35,7 +38,6 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  /* position: absolute; */
 }
 .containeer-one div p {
   display: flex;
@@ -57,13 +59,13 @@
   font-size: 24px;
   line-height: 72px;
   transition: 0.8s;
-  margin:auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: var(--font-family);
 }
-.containeer-one div button:hover{
+.containeer-one div button:hover {
   transform: scale(1.1);
 }
 .containeer-two {
@@ -83,7 +85,7 @@
 }
 .containeer-two .row-image > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .containeer-two .row-image h1 {
@@ -97,20 +99,23 @@
   letter-spacing: -0.6px;
   color: #262626;
 }
-.containeer-two .row-image  div img {
+.containeer-two .row-image div img {
   padding: 32px;
   opacity: 0.5;
   transition: 0.3s;
   box-sizing: border-box;
   width: 200px;
-  height: 140px;
+  /* width: 50%; */
 }
 .containeer-two .row-image > div img:hover {
   opacity: 1;
 }
 .containeer-three {
+  width: 100%;
   height: 590px;
   background-color: var(--font-color);
+  padding: 40px;
+  box-sizing: border-box;
 }
 .containeer-three .containeer-three-h1 {
   margin: 0 auto;
@@ -122,133 +127,142 @@
   text-align: center;
 }
 
-.containeer-three .rows{
+.containeer-three .rows {
   display: flex;
-  margin: 0;
+  margin: 0 10%;
   justify-content: center;
 }
-.containeer-three .rows  div{
-  width: 80%;
+.containeer-three .rows div {
+  width: 100%;
   height: 100%;
-  margin: 0 5%;
+  margin: 0 10px;
   position: relative;
 }
-.containeer-three .rows > div h1{
+.containeer-three .rows > div h1 {
   font-size: 10em;
   text-align: center;
   padding: auto;
   position: absolute;
 }
-.containeer-three .rows .one-rows h1,.containeer-three .rows  .two-rows h1{
-color: #6aade3;
-transition: .3s;
-opacity: 0.3;
+.containeer-three .rows .one-rows h1,
+.containeer-three .rows .two-rows h1 {
+  color: #6aade3;
+  transition: 0.3s;
+  opacity: 0.3;
 }
-.containeer-three .rows .three-rows h1{
+.containeer-three .rows .three-rows h1 {
   color: #7bb63d;
   opacity: 0.3;
 }
-.containeer-three .rows > div div img{
+.containeer-three .rows > div div img {
   position: absolute;
   top: 180px;
   width: 100%;
   /* margin: 0 40px; */
 }
-.containeer-three .rows > div div img:nth-child(2){
-  width: 100%;
+.containeer-three .rows > div div img:nth-child(2) {
+  width: 70%;
   top: 250px;
-  left: 10px;
+  left: 40px;
 }
-.containeer-three .rows > div div .texts{
+.containeer-three .rows > div div .texts {
   position: absolute;
-  top: 420px;
-  margin: 0 20%;
+  top: 400px;
+  margin: 0 15%;
 }
-.containeer-three .rows > div div .texts h3{
+.containeer-three .rows > div div .texts h3 {
   margin: 20px 0;
   font-size: 24px;
   text-align: center;
   line-height: 32.2px;
   font-family: var(--font-family);
-  color:#262626;
+  color: #262626;
 }
-.containeer-three .rows > div div .texts p{
-    width: 100%;
-    text-align: center;
-    color: #262626;
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 20.8px;
+.containeer-three .rows > div div .texts p {
+  width: 100%;
+  text-align: center;
+  color: #262626;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 20.8px;
 }
-@media (min-aspect-ratio : 16/9){
-  .back-video{
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
     width: 100%;
     height: auto;
   }
 }
-@media (max-aspect-ratio : 16/9){
-  .back-video{
-    width: auto;
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: 800px;
+  }
+}
+@media all and (max-width: 480px) {
+  .containeer-three {
+    padding: 0;
+  }
+  .containeer-three {
     height: 100%;
   }
-}
-@media (min-width : 281px) and (max-width : 500px){
-  .containeer-two .row-image > div{
-    display: block;
-  }
-  .containeer-two .row-image  div img{
-    margin:0 15%;
-    width: 70%;
-  }
-}
-@media (max-width : 576px){
-  .containeer-one div h1{
-    font-size: 30px;
-  line-height: 30px;
-  }
-  .containeer-one div p{
-    font-size: 20px;
-    list-style: 20px;
-  }
-  .containeer-one div button{
-    font-size: 8px;
-    width: 100%;
-  }
-  .containeer-two .row-image h1{
-    font-size: 30px;
-    list-style: 30px;
-  }
-  .containeer-three .containeer-three-h1{
+  .containeer-two .row-image h1 {
     font-size: 30px;
     line-height: 30px;
   }
+  .containeer-three .containeer-three-h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .containeer-one div h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .containeer-one div p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .containeer-two .row-image > div {
+    width: 200px;
+  }
+  .containeer-three .rows div div img:nth-child(1) {
+    width: 100%;
+    margin: 0;
+  }
+  .containeer-three .rows > div div img:nth-child(2) {
+    margin: 0 20%;
+    position: static;
+     
+  }
 }
-@media  screen and (max-width : 960px){
-  .containeer-two .row-image > div{
-    display: block;
+@media all and (max-width: 960px) {
+  .containeer-two .row-image > div {
+    display: flex;
+    justify-content: space-around;
     margin: 10px auto;
   }
-  .containeer-three .rows{
+  .containeer-three .rows {
     display: block;
   }
-  .containeer-three .rows  div{
+  .containeer-three .rows div {
     position: static;
     margin: 40px auto;
   }
-  .containeer-three .rows > div div img{
+  .containeer-three .rows > div div img {
     position: static;
-    margin: 0;
+    width: 70%;
+    margin: 0 10%;
   }
-  .containeer-three .rows > div div .texts{
+  .containeer-three .rows > div div .texts {
     margin: 0;
     position: static;
   }
-  .containeer-three .rows > div div img:nth-child(2){
-    margin-top: -180px;
+  .containeer-three .rows > div div img:nth-child(2) {
+    width: 50%;
+    position: static;
+    margin-top: -130px;
   }
-  .containeer-one div button{
+  .containeer-one div button {
     width: 80%;
     font-size: 150%;
   }
-  
 }
