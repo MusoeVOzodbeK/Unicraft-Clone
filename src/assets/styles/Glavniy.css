@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   background-size: cover;
-  background-image: url("https://www.unicraft.org/static/video/vh1/poster.webp");
+  /* background-image: url("https://www.unicraft.org/static/video/vh1/poster.webp"); */
 }
 .containeer-one div {
   position: relative;
@@ -20,6 +20,10 @@
   padding-top: 224px;
   box-sizing: border-box;
   background: rgba(112, 168, 206, 0.6);
+}
+.back-video{
+  position: absolute;
+  width: 100%;
 }
 .containeer-one div h1 {
   display: flex;
@@ -175,6 +179,18 @@ opacity: 0.3;
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 20.8px;
+}
+@media (min-aspect-ratio : 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio : 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
 }
 @media (min-width : 281px) and (max-width : 500px){
   .containeer-two .row-image > div{

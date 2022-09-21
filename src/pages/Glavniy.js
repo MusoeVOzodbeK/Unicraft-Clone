@@ -24,6 +24,9 @@ function Glavniy() {
   return (
     <>
       <div className="containeer-one">
+        <video autoPlay loop muted playsInline className="back-video">
+          <source src="https://player.vimeo.com/external/660278794.hd.mp4?s=e4deeeb47bb419b5443c34fa7f0c89b7a31642c9&profile_id=174" type="video/mp4"></source>
+        </video>
         <div>
           <h1>Платформа для онлайн обучения</h1>
           <p>Запусти обучение сотрудников сейчас, следуя простым инструкциям</p>
