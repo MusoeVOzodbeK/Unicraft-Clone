@@ -3,14 +3,23 @@
 .letstry {
   position: relative;
   padding: 50px 0;
+  overflow-x: hidden;
+
+  @include breakpoint-down(780px) {
+    padding-bottom: 0;
+  }
 
   &__badge {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
+    left: 10%;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+
+    @include breakpoint-down(1200px) {
+      left: 2%;
+    }
 
     @include mobile {
       width: 140px;
@@ -48,36 +57,42 @@
 
   &__inner {
     position: relative;
-    flex-direction: row-reverse;
+    justify-content: center;
 
-    @include tablet {
-      flex-direction: column;
+    @include breakpoint-down(1090px) {
+      flex-direction: row-reverse;
+      justify-content: unset;
+    }
+
+    @include breakpoint-down(888px) {
+      flex-direction: unset;
       justify-content: center;
     }
   }
 
   &__img {
-    position: absolute;
-    top: -5%;
-    left: 8%;
+    position: relative;
+    top: -30px;
+    left: 20px;
     z-index: -1;
 
-    @include tablet {
-      position: static;
-      object-fit: contain;
+    @include breakpoint-down(1090px) {
+      position: absolute;
     }
 
-    @include breakpoint-down(550px) {
+    @include breakpoint-down(888px) {
       position: relative;
-      right: 200px;
+    }
+
+    @include breakpoint-down(730px) {
+      left: 50px;
     }
   }
 
   .content {
     width: 480px;
     text-align: center;
-    padding: 2rem;
-    margin-right: 200px;
+    padding: 32px;
     border-radius: 8px;
     border: 1px solid #F2F2F2;
     background: #ffffff;
@@ -85,6 +100,12 @@
 
     &:hover {
       box-shadow: 0 5px 40px -5px rgb(106 173 227 / 35%);
+    }
+
+    @include breakpoint-down(780px) {
+      position: relative;
+      top: -80px;
+      width: 100%;
     }
 
     &__title {
@@ -113,15 +134,6 @@
         font-size: 18px;
         padding: 16px 40px;
       }
-    }
-
-    @include breakpoint-down(1360px) {
-      margin-right: 100px;
-    }
-
-    @include tablet {
-      //margin: 0 auto;
-      width: 100%;
     }
   }
 }

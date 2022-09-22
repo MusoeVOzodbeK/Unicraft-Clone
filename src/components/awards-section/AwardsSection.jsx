@@ -15,7 +15,7 @@ const AwardsSection = () => {
         },
         {
             id: 2,
-            title: ['ТОП-100', 'ТОП-100'],
+            title: ['ТОП-100', 'EdTech'],
             desc: 'ТОП-100 EdTech компаний России и СНГ по версии ведущего аналитического агентства',
             img: 'https://www.unicraft.org/style/img/awards_logo/holoniq.png',
             borderClr: '#C3C3C3'
