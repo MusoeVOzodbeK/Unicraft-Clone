@@ -165,11 +165,14 @@ background-color: #ffffff;
   color: #7bb63d;
   opacity: 0.3;
 }
-.containeer-three .rows > div div img {
+.containeer-three .rows > div div>img {
   position: absolute;
   top: 180px;
   width: 100%;
   /* margin: 0 40px; */
+}
+.containeer-three .rows > div {
+  margin: 0 40px;
 }
 .containeer-three .rows > div div img:nth-child(2) {
   width: 70%;
