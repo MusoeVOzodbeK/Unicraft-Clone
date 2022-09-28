@@ -80,7 +80,7 @@ const AwardsSection = () => {
                                 <a href="https://apple-store.com"><img src="https://www.unicraft.org/style/img/appbadges/badge-appstore-ru.svg" alt="play-market"/></a>
                             </li>
                             <li>
-                                <a href="https://google-play.com"><img src="https://www.unicraft.org/style/img/appbadges/badge-googleplay-ru.png" alt="apple-store"/></a>
+                                <a href="https://google-play.com"><img src="https://www.unicraft.org/style/img/appbadges/badge-googleplay-ru.svg" alt="apple-store"/></a>
                             </li>
                             <li>
                                 <a href="https://app-gallery.com"><img src="https://www.unicraft.org/style/img/appbadges/badge-huaweiappgallery-ru.svg" alt="app-galery"/></a>
