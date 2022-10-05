@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import './MyModal.scss'
 import MyInput from "../input/MyInput";
 
-const MyModal = ({ modalActive, setModalActive }) => {
+const MyModal = ({ setModalActive }) => {
 
     const [itemActive, setItemActive] = useState(0)
     const [addInp, setAddInp] = useState(false)
@@ -12,7 +12,7 @@ const MyModal = ({ modalActive, setModalActive }) => {
         <div className='modal'>
             <div className="modal__content content">
                 <div onClick={() => setModalActive(false)}>
-                    <i className="far fa-times"></i>
+                    <i className="far fa-times" />
                 </div>
                 <h3 className="content__title">Для получения доступа укажите</h3>
                 <span className='content__txt'>Кто будет обучаться на платформе?</span>
