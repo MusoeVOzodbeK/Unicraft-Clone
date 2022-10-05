@@ -1,11 +1,12 @@
 import './App.scss';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./pages/Home";
+import Functional from "./pages/Functional";
 
 // global styles
 import './assets/styles/normalize.css'
 import './assets/styles/flex-box.css'
 import './assets/styles/global.css'
-import Home from "./pages/Home";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         {/* header */}
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/functional' element={<Functional />} />
         </Routes>
         {/* footer */}
       </BrowserRouter>

@@ -40,7 +40,7 @@ const AwardsSection = () => {
 
     return (
         <div className='awards'>
-            {modalActive && <MyModal modalActive={modalActive} setModalActive={setModalActive} />}
+            {modalActive && <MyModal setModalActive={setModalActive} />}
             <div className="bg bg-cup" />
             <div className="container">
                 <div className="awards__inner">

@@ -1,0 +1,76 @@
+@use './src/scss' as *;
+
+.modules {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, HSLA(0, 0%, 50%, 0.2), HSLA(0, 0%, 50%, 0) 20rem);
+
+  .container {
+    max-width: 1200px;
+  }
+
+  &__titles {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+
+    @include tablet {
+      font-size: 46px;
+    }
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+
+  &__desc {
+    font-size: 24px;
+    line-height: 130%;
+
+    @include tablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  .module {
+    padding: 40px 0;
+
+    &__title {
+      font-weight: 600;
+      font-size: 40px;
+      margin-bottom: 50px;
+
+      @include tablet {
+        font-size: 34px;
+      }
+      @include mobile {
+        font-size: 28px;
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      text-align: center;
+
+      @include mobile {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 0 20px;
+      }
+      @include breakpoint-down(440px) {
+        padding: 0;
+      }
+      @include breakpoint-down(380px) {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+      }
+    }
+  }
+}
