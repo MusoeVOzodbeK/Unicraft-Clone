@@ -2,18 +2,18 @@ import React, {useState} from 'react';
 
 import './ModuleItem.scss';
 import ItemModal from "./ItemModal";
+import MyModal from "../../UI/modal/MyModal";
 
 const ModuleItem = ({ item }) => {
 
-    // const [modalItem, setModalItem] = useState(undefined)
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false);
+    const [scModal, setScModal] = useState(false)
 
     return (
-        <li className='module__item item' onClick={() => setModal(true)}>
-            {
-                modal === false ? null : <ItemModal item={item} setModal={setModal} />
-            }
-            <div className='item__titles'>
+        <li className='module__item item'>
+            { modal && <ItemModal item={item} setModal={setModal} setScModal={setScModal} /> }
+            { scModal && <MyModal setModalActive={setScModal} /> }
+            <div className='item__titles' onClick={() => setModal(true)}>
                 <div><i className={`${item.icon} icon`} /></div>
                 <h4 className='item__title'>{ item.title }</h4>
                 <p className="item__desc">{ item.desc }</p>

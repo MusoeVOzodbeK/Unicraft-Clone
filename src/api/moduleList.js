@@ -36,8 +36,8 @@ const moduleList = [
     {
         icon: 'fal fa-box-full',
         imgs: [
-            'https://www.unicraft.org/static/modules/preview/scorm-edit.png',
-            'https://www.unicraft.org/static/modules/preview/scorm-view.png',
+            'https://www.unicraft.org/static/modules/preview/branding-1.png',
+            'https://www.unicraft.org/static/modules/preview/branding-2.png',
         ],
         title: 'Поддержка SCORM',
         desc: 'Загружайте интерактивные курсы, созданные в сторонних редакторах',
@@ -52,7 +52,7 @@ const moduleList = [
     {
         icon: 'fal fa-wave-square',
         imgs: [
-            'https://www.unicraft.org/static/modules/preview/points-test.png',
+            'https://www.unicraft.org/static/modules/preview/branding-3.png',
             'https://www.unicraft.org/static/modules/preview/points-course.png',
         ],
         title: 'Система баллов',

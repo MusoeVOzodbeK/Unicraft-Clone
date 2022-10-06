@@ -8,7 +8,7 @@ const Home = () => {
         <div className='home'>
             <div className='center'>
                 Home
-                <Link to='/functional'>Functional Page</Link>
+                <Link to='/functional' style={{fontWeight: 700, fontSize: 20}}>Functional Page</Link>
             </div>
             <AwardsSection />
             <LetsTry />

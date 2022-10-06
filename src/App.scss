@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .btn {
   display: block;
   font-weight: 600;
