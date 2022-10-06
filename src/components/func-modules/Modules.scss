@@ -15,13 +15,16 @@
   &__title {
     font-weight: 600;
     font-size: 50px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 
     @include tablet {
       font-size: 46px;
     }
     @include mobile {
-      font-size: 38px;
+      font-size: 36px;
+    }
+    @include breakpoint-down(460px) {
+      font-size: 30px;
     }
   }
 
@@ -34,6 +37,9 @@
     }
     @include mobile {
       font-size: 18px;
+    }
+    @include breakpoint-down(460px) {
+      font-size: 17px;
     }
   }
 
@@ -49,7 +55,7 @@
         font-size: 34px;
       }
       @include mobile {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
 

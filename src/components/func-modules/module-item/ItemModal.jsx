@@ -1,21 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const ItemModal = ({ item, setModal}) => {
+const ItemModal = ({ item, setModal, setScModal}) => {
+
+    const [imgActive, setImgActive] = useState(0)
 
     return (
-        <div className='item__overview overview'>
+        <div className={`item__overview overview`}>
             <div className="overview__content content">
-                <i className="fal fa-expand-arrows" />
-                <i className="far fa-times" onClick={() => setModal(false)} />
+                <i className="fal fa-expand-arrows i" />
+                <i className="far fa-times i" onClick={() => setModal(false)} />
                 <div className="content__inner row between align-center">
                     <div className="content__imgs row align-center">
                         <div className='content__frame'>
-                            <img className='content__img active' src={item.imgs[0]} alt='img' />
+                            <img className='content__img active' src={item.imgs[imgActive]} alt="img"/>
                         </div>
-                        <ul className="content__corusel row">
+                        <ul className="content__corusel row center">
                             {
                                 item.imgs.map((img, i) => (
-                                    <li  key={i}><img src={img} alt='img' /></li>
+                                    <li key={i}>
+                                        <img
+                                            className={`content__corusel-img ${imgActive === i ? 'active' : ''}`}
+                                            src={img}
+                                            alt='img'
+                                            onClick={() => setImgActive(i)}
+                                        />
+                                    </li>
                                 ))
                             }
                         </ul>
@@ -33,11 +42,19 @@ const ItemModal = ({ item, setModal}) => {
                                 ))
                             }
                         </ul>
-                        <button className='btn btn-green'>Попробовать бесплатно</button>
+                        <button
+                            className='content__btn btn btn-green'
+                            onClick={() => {
+                                setModal(false)
+                                setScModal(true)
+                            }}
+                        >
+                            Попробовать бесплатно
+                        </button>
                     </div>
                 </div>
             </div>
-            <div className="bg" />
+            <div className="bg" onClick={() => setModal(false)} />
         </div>
     );
 };
