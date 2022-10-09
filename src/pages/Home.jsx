@@ -1,9 +1,10 @@
 import React from 'react';
 import AwardsSection from "../components/awards-section/AwardsSection";
 import LetsTry from "../components/letstry-section/LetsTry";
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";import LogRocket from 'logrocket';
 
 const Home = () => {
+    LogRocket.init('kcd91g/test');
     return (
         <div className='home'>
             <div className='center'>

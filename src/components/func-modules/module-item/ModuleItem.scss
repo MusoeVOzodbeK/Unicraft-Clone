@@ -111,10 +111,18 @@
         .fa-expand-arrows {
           left: 10px;
           font-size: 24px;
+
+          @include mobile {
+            font-size: 18px;
+          }
         }
         .fa-times {
           right: 12px;
           font-size: 22px;
+
+          @include mobile {
+            font-size: 20px;
+          }
         }
 
         &__inner {
@@ -151,7 +159,12 @@
           left: 0;
           max-width: 512px;
           max-height: 320px;
+          min-width: 330px;
           width: 99.9%;
+
+          @include breakpoint-down(480px) {
+            min-width: unset;
+          }
 
           &.active, {
             position: relative;
@@ -229,6 +242,7 @@
           @include breakpoint-down(950px) {
             flex: unset;
             padding: 3rem;
+            padding-top: 10px;
           }
         }
 
@@ -253,7 +267,7 @@
             font-size: 17px;
           }
           @include mobile {
-            font-size: 16px;
+            font-size: 15px;
           }
         }
 
@@ -289,10 +303,11 @@
           font-weight: 700;
           font-size: 17px;
           text-transform: uppercase;
-          padding: 1rem 1.5rem;
+          padding: 1.2rem 1.5rem;
 
           @include mobile {
-            font-size: 15px;
+            font-size: 12px;
+            padding: 1.2rem 12px;
           }
         }
       }
