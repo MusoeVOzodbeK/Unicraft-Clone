@@ -107,6 +107,9 @@
       top: -80px;
       width: 100%;
     }
+    @include mobile {
+      padding: 20px;
+    }
 
     &__title {
       font-weight: 600;
@@ -129,10 +132,11 @@
 
     &__btn {
       padding: 1rem 40px;
+      margin-top: 10px;
 
       @include mobile {
         font-size: 18px;
-        padding: 16px 40px;
+        padding: 1.5rem 20px;
       }
     }
   }
