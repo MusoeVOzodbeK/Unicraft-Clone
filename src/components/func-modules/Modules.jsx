@@ -11,11 +11,11 @@ const Modules = () => {
             <div className="container">
                 <div className="modules__inner center">
                     <div className="modules__titles">
-                        <h2 className="modules__title">Функционал платформы Unicraft</h2>
-                        <p className='modules__desc'>Платформа Unicraft uLearn имеет модульную архитектуру. Основные модули платформы включены в базовый набор. Дополнительные модули предоставляются по запросу.</p>
+                        <h2 className="modules__title">Unicraft platformasining funktsionali</h2>
+                        <p className='modules__desc'>Unicraft uLearn platformasi modulli arxitekturaga ega. Platformaning asosiy modullari asosiy to'plamga kiritilgan. Qo'shimcha modullar talab bo'yicha taqdim etiladi.</p>
                     </div>
-                    <Module title='Основные модули' list={moduleList} />
-                    <Module title='Дополнительные модули' list={revMyArr} />
+                    <Module title='Asosiy modullar' list={moduleList} />
+                    <Module title='Qoshimcha modullar' list={revMyArr} />
                 </div>
             </div>
         </div>
