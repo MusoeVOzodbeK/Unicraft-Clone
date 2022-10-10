@@ -5,7 +5,7 @@ const moduleList = [
           'https://www.unicraft.org/static/modules/preview/courseseditor-list.png',
           'https://www.unicraft.org/static/modules/preview/courseseditor-editor-test.png',
       ],
-      title: 'Редактор курсов',
+      title: 'Kurs muharriri',
         desc: 'Создавайте учебные курсы используя популярные форматы файлов',
       overview: 'Один из основных разделов на платформе, предназначенный для создания и редактирования учебных курсов.',
       promo: [
@@ -23,7 +23,7 @@ const moduleList = [
             'https://www.unicraft.org/static/modules/preview/lessonseditor-test1.png',
             'https://www.unicraft.org/static/modules/preview/lessonseditor-test2.png'
         ],
-        title: 'Конструктор заданий',
+        title: 'Vazifa dizayneri',
         desc: 'Автоматически проверяйте знания с помощью различных типов тестов',
         overview: 'Дополнительный функционал редактора курсов, предназначенный для создания и редактирования практических упражнений.',
         promo: [
@@ -39,7 +39,7 @@ const moduleList = [
             'https://www.unicraft.org/static/modules/preview/branding-1.png',
             'https://www.unicraft.org/static/modules/preview/branding-2.png',
         ],
-        title: 'Поддержка SCORM',
+        title: 'SCORM-ni qollab-quvvatlash',
         desc: 'Загружайте интерактивные курсы, созданные в сторонних редакторах',
         overview: 'Дополнительный функционал редактора курсов, позволяющий использовать интерактивные уроки в качестве обучающих занятий.',
         promo: [
@@ -55,7 +55,7 @@ const moduleList = [
             'https://www.unicraft.org/static/modules/preview/branding-3.png',
             'https://www.unicraft.org/static/modules/preview/points-course.png',
         ],
-        title: 'Система баллов',
+        title: 'Ballar tizimi',
         desc: 'Управляйте количеством начисляемых баллов за каждое задание',
         overview: 'Отдельное расширение для редактора курсов, предназначенное для начисления баллов за пройденные уроки и детального контроля над успеваемостью студентов.',
         promo: [
